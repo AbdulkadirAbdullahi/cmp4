@@ -26059,6 +26059,12 @@ ion-navbar.toolbar {
   font-weight: bolder;
 }
 
+.ad {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
 .icon {
   padding-left: 10px !important;
   font-weight: bold;
@@ -26141,6 +26147,11 @@ page-bookdetail *::-webkit-scrollbar .scroll {
 #cnt {
   width: 100%;
   height: 100% !important;
+}
+
+page-fakenewsreport .rp {
+  text-align: center;
+  font-weight: bold;
 }
 
 page-home #moduleCard {
@@ -26253,23 +26264,50 @@ page-library #h {
   transform: scale(1.5);
 }
 
-page-login ion-content {
-  background: linear-gradient(316deg, #1de840, #00c983, #7fff00, #009900, #00c983, #009900, #00c983);
-  background-size: 1800% 1800%;
-  -webkit-animation: rainbow 30s linear infinite;
-  animation: rainbow 30s linear infinite;
+page-login {
+  /*
+    // Fullscreen animated rainbow gradient
+    ion-content {
+      background: linear-gradient(316deg, #1de840,#00c983, #7fff00,#009900,#00c983, #009900,#00c983, );
+      background-size: 1800% 1800%;
+      animation: rainbow 30s linear infinite;
+    }
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 0%
+      }
+      50% {
+        background-position: 100% 100%
+      }
+      100% {
+        background-position: 0% 0%
+      }
+    }  
+*/
 }
 
-@keyframes rainbow {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+page-login .input {
+  background-color: lightgreen;
+  padding: 25px;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+page-login #inputlabel {
+  color: black !important;
+  font-weight: bolder !important;
+  font-size: larger !important;
+}
+
+page-login #reg {
+  background-color: #e1ffea !important;
+}
+
+page-login .dh {
+  color: green;
+  font-weight: bolder;
+  font-size: larger;
 }
 
 page-login .toolbar-content,
@@ -26438,8 +26476,8 @@ page-login .strike > span:after {
 }
 
 #emadrisa {
-  color: whitesmoke !important;
-  font-size: 40px;
+  color: #0a7949 !important;
+  font-size: 50px;
   font-weight: bold;
   font-family: monospace;
   text-align: center;
@@ -26488,7 +26526,7 @@ page-login .strike > span:after {
 
 @media (max-width: 400px) {
   #emadrisa {
-    color: whitesmoke !important;
+    color: #06643b !important;
     font-size: 25px;
     font-weight: bold;
     font-family: monospace;
